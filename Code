@@ -1,0 +1,12 @@
+import random
+
+
+songs = ["Spitfire", "Let the sparks fly", "We will rock you", "Youre gonna go far kid"]
+print ("******JUKEBOX******")
+song_choice = input ("Give me a song >>")
+
+if song_choice in songs:
+  print ("Now playing... ", (song_choice))
+else:
+  print ("I don't have that song. Playing a random song...")
+  print (random.choice(songs))
